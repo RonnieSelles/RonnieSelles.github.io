@@ -8,36 +8,93 @@
 </head>
 <body>
     
-    <header>
-        
-           
+    <nav>
             <ul>
                 <li><a id='current-page' href="index.html"><img id='home-icon' src="home-icon.png" ></a></li>
                 <li><a href="profile.html">Profile</a></li>
                 <li><a href="dashboard.html">Dashboard</a></li>
                 <li><a href="faq.html">FAQ</a></li>
             </ul>
-        
-    </header>
+    </nav>
+
     <style>
-        body{
+            #go-down-button{
+            color: black;
+            scroll-behavior: smooth;
+            }
+            /*achtergrond */
+            #background-image{
             background-image: url('wallpaper.jpg');
             background-repeat: no-repeat;
+            background-position: top;
+            background-size: fill;
             background-attachment: fixed;
-            background-position: center;
-            background-attachment: fixed;
-            background-size: cover;
+            height: 200vh;
+            }
+            /*box met afbeeldingen text*/
+            #box-container{
+              display:flex;
+              flex-direction: row; 
+              position: relative;
+              top :100vh;
+              height: 60vh;
+            }
+
+            .box{
+            background-color: black;
+            border: 10px solid rgb(0, 0, 0);
+            flex: 33%;
+            align-content: center;
+            max-width: 33vw;
+            max-height: 33vw;
+            }
+             /*mobile*/
+             @media (max-width: 800px) {
+            #box-container {
+            flex-direction: column;
+            top:50vh;
+            left: 10%;
+            }
+            .box{
+                max-width: 60vw;
+            max-height: 60vw;
+            }
+            }
+            /* js en hz logo*/
+            .logos-main{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
             width: 100%;
-            height:100%;
-        }
+            height: 100%;
+            }
+
+            
     </style>
     <main>
-        <div id= 'welcome-text'> 
-            <h2>Ronnie Selles</h2>
-            <h5>Welcome!</h5>
+        <div id='background-image'>
+            <a id= 'go-down-button' href="#box-container">Go down</a>
+            <div id= 'welcome-text'> 
+                <header><h2>Ronnie Selles</h2></header>
+                <h5>Welcome!</h5>
+            </div>
+
+            <div id="box-container">
+                <div class="box"><img class='logos-main' src="hz-logo.jpg" ></div>
+                <div class="box">
+                    <ul>
+                        <li>
+                            The HBO level suits me because ...                   
+                        </li>
+                        <li>
+                            The study programme suits my personality because ...
+                        </li>
+                    </ul>
+                </div>
+                <div class='box'><img class='logos-main' src="js-logo.png" ></div>
+            </div>
         </div>
     </main>
-    <div class="push"></div>
     <footer>
           <h5>© 2020 Ronnie Selles</h5>   
     </footer>
