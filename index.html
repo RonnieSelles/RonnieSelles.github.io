@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>home</title>
+    <title>Home | Ronnie Selles</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     
     <nav>
             <ul>
-                <li><a id='current-page' href="index.html"><img id='home-icon' src="home-icon.png" ></a></li>
+                <li><a id='current-page' href="index.html"><img id='home-icon' src="assets/home-icon.png" ></a></li>
                 <li><a href="profile.html">Profile</a></li>
                 <li><a href="dashboard.html">Dashboard</a></li>
                 <li><a href="faq.html">FAQ</a></li>
@@ -18,19 +18,29 @@
     </nav>
 
     <style>
+            #welcome-text{
+            text-align:center;
+            font-size: 50px;
+            position: relative;
+            top:30vh;
+            text-shadow: 2px 2px 2px black;
+            }
+
             #go-down-button{
-            color: black;
+            color: white;
+            text-shadow: 2px 2px 2px black;
             scroll-behavior: smooth;
+            position: relative;
+            left:1vh;
             }
             /*achtergrond */
             #background-image{
-            background-image: url('wallpaper.jpg');
+            background-image: url('assets/wallpaper.jpg');
             background-repeat: no-repeat;
             background-position: top;
             background-size: cover;
             background-attachment: fixed;
             height: 200vh;
-          
             }
             /*box met afbeeldingen text*/
             #box-container{
@@ -81,7 +91,7 @@
             </div>
 
             <div id="box-container">
-                <div class="box"><img class='logos-main' src="hz-logo.jpg" ></div>
+                <div class="box"><img class='logos-main' src="assets/hz-logo.jpg" ></div>
                 <div class="box">
                     <ul>
                         <li>
@@ -92,7 +102,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class='box'><img class='logos-main' src="js-logo.png" ></div>
+                <div class='box'><img class='logos-main' src="assets/js-logo.png" ></div>
             </div>
         </div>
     </main>
