@@ -1,27 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FAQ | Ronnie Selles</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+<style>
+    #box-container {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        top: 20vh;
+        height: 60vh;
+    }
+
+    .box {
+        background-color: black;
+        border: 10px solid rgb(0, 0, 0);
+        flex: 33%;
+        align-content: center;
+        max-width: 33vw;
+        max-height: 33vw;
+    }
+</style>
+
 <body>
     <nav>
-            <ul>
-                <li><a href="index.html"><img id='home-icon' src="assets/home-icon.png" ></a></li>
-                <li><a href="profile.html">Profile</a></li>
-                <li><a href="dashboard.html">Dashboard</a></li>
-                <li><a id='current-page' href="faq.html">FAQ</a></li>
-            </ul>
+        <ul>
+            <li><a href="index.html"><img id='home-icon' src="assets/home-icon.png"></a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a id='current-page' href="faq.html">FAQ</a></li>
+        </ul>
     </nav>
 
     <main>
-      
+        <div id="box-container">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class='box'></div>
+        </div>
+        </div>
     </main>
 
     <footer>
-        <h5>© 2020 Ronnie Selles</h5>   
-  </footer>
+        <h5>© 2020 Ronnie Selles</h5>
+    </footer>
 </body>
+
 </html>
